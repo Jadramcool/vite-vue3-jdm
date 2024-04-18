@@ -38,6 +38,7 @@ export default (env: ConfigEnv) => {
         filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
         globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
+      dts: 'typings/auto-imports.d.ts',
     }),
     Components({
       // dirs 指定组件所在位置，默认为 src/components
@@ -47,6 +48,7 @@ export default (env: ConfigEnv) => {
       extensions: ['vue'],
       // 解析的 UI 组件库，这里以 NaiveUI 为例
       resolvers: [NaiveUiResolver()],
+      dts: 'typings/components.d.ts',
     }),
     viteMockServe({
       // 模拟服务的文件夹，在设置了configPath后失效

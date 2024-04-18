@@ -7,13 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppCard: typeof import('./src/components/common/AppCard.vue')['default']
-    Application: typeof import('./src/components/application/Application.vue')['default']
-    AppPage: typeof import('./src/components/common/AppPage.vue')['default']
-    CommonWrapper: typeof import('./src/components/common/CommonWrapper.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    JayIcon: typeof import('./src/components/common/JayIcon.vue')['default']
-    NBackTop: typeof import('naive-ui')['NBackTop']
+    AppCard: typeof import('./../src/components/common/AppCard.vue')['default']
+    Application: typeof import('./../src/components/application/Application.vue')['default']
+    AppPage: typeof import('./../src/components/common/AppPage.vue')['default']
+    CommonWrapper: typeof import('./../src/components/common/CommonWrapper.vue')['default']
+    HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
+    JayIcon: typeof import('./../src/components/common/JayIcon.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
     NColorPicker: typeof import('naive-ui')['NColorPicker']
@@ -47,8 +46,7 @@ declare module 'vue' {
     NWatermark: typeof import('naive-ui')['NWatermark']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheFooter: typeof import('./src/components/common/TheFooter.vue')['default']
-    TheLogo: typeof import('./src/components/common/TheLogo.vue')['default']
-    Watermark: typeof import('./src/components/common/Watermark.vue')['default']
+    TheLogo: typeof import('./../src/components/common/TheLogo.vue')['default']
+    Watermark: typeof import('./../src/components/common/Watermark.vue')['default']
   }
 }
