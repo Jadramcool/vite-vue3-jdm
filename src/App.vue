@@ -1,3 +1,12 @@
+<!--
+ * @Author: Jay
+ * @Date: 2024-05-06 10:22:58
+ * @LastEditors: jdm
+ * @LastEditTime: 2024-08-20 17:25:05
+ * @FilePath: \vite-vue3-jdm\src\App.vue
+ * @Description: 
+ * 
+-->
 <template>
   <n-config-provider
     class="wh-full"
@@ -21,9 +30,9 @@
 </template>
 
 <script setup lang="ts" name="App">
-import { darkTheme } from 'naive-ui';
 import { useAppStore, useTabStore } from '@/store';
 import { naiveI18nOptions } from '@/utils';
+import { darkTheme } from 'naive-ui';
 import Application from './components/application/Application.vue';
 
 const route = useRoute();
@@ -74,4 +83,4 @@ const keepAliveNames = computed(() => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>

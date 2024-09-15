@@ -1,3 +1,12 @@
+<!--
+ * @Author: jdm
+ * @Date: 2024-04-13 15:45:42
+ * @LastEditors: jdm
+ * @LastEditTime: 2024-08-20 14:56:02
+ * @FilePath: \vite-vue3-jdm\src\layout\components\header\components\LanguageSwitch.vue
+ * @Description: 
+ * 
+-->
 <script setup lang="ts">
 import { useAppStore } from '@/store';
 
@@ -6,7 +15,7 @@ const appStore = useAppStore();
 const options = [
   {
     label: 'English',
-    value: 'en',
+    value: 'enUS',
   },
   {
     label: '中文',

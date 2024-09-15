@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
+    <title>%VITE_APP_NAME%</title>
   </head>
+
   <body>
     <div id="app">
+      <link rel="stylesheet" href="/resource/loading.css" />
       <!-- 白屏时的loading效果 -->
-      <!-- <div class="loading-container">
-        <div class="loading-spin__container">
-          <div class="loading-spin">
-            <div class="left-0 top-0 loading-spin-item"></div>
-            <div class="left-0 bottom-0 loading-spin-item loading-delay-500"></div>
-            <div class="right-0 top-0 loading-spin-item loading-delay-1000"></div>
-            <div class="right-0 bottom-0 loading-spin-item loading-delay-1500"></div>
+      <div class="loading-body">
+        <div class="terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
           </div>
+          <div class="text">Loading...</div>
         </div>
-        <div class="loading-title">加载中</div>
       </div>
-      <script src="/resource/loading.js"></script> -->
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

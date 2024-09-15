@@ -1,6 +1,6 @@
 <template>
   <n-flex
-    class="cursor-pointer rounded-4 p-6 text-22 transition-all-300"
+    class="cursor-pointer rounded-4 p-6px text-22px transition-all-300"
     @click="appStore.switchCollapsed"
   >
     <i :class="appStore.collapsed ? 'i-line-md-menu-unfold-left' : 'i-line-md-menu-fold-left'" />

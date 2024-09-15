@@ -1,4 +1,12 @@
-a
+<!--
+ * @Author: Jay
+ * @Date: 2024-04-13 15:45:42
+ * @LastEditors: Jay
+ * @LastEditTime: 2024-07-23 11:23:22
+ * @FilePath: \vite-vue3-jdm\src\components\common\Watermark.vue
+ * @Description: 
+ * 
+-->
 <template>
   <n-watermark
     v-if="props.showWatermark"

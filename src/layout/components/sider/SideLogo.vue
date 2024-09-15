@@ -1,10 +1,10 @@
 <template>
-  <router-link class="h-60 flex-center" to="/">
-    <!-- <img src="@/assets/images/logo.png" class="h-40" /> -->
-    <TheLogo class="rounded-8!" />
+  <router-link class="h-60px flex-center" to="/">
+    <!-- <img src="@/assets/images/logo.png" class="h-40px" /> -->
+    <TheLogo class="rounded-8px!" />
     <h2
       v-show="!appStore.collapsed"
-      class="ml-10 max-w-140 flex-shrink-0 text-16 color-primary font-bold"
+      class="ml-10px max-w-140px flex-shrink-0 text-16px color-primary font-bold"
     >
       {{ title }}
     </h2>

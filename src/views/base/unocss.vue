@@ -21,53 +21,63 @@
       </a>
     </p>
 
-    <div mt-20 w-350 flex-center flex-col>
-      <div flex flex-wrap justify-around rounded-10 p-10 card-border>
-        <div m-20 h-50 w-50 flex-center rounded-5 p-10 border="1 solid">
-          <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+    <div mt-20px w-350px flex-center flex-col>
+      <div flex flex-wrap justify-around rounded-10 p-10pxpx card-border>
+        <div m-20px h-50px w-50px flex-center rounded-5 p-10px border="1 solid">
+          <span h-6px w-6px rounded-3px bg-black dark:bg-white />
         </div>
-        <div m-20 h-50 w-50 flex justify-between rounded-5 p-10 border="1 solid">
-          <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-          <span h-6 w-6 self-end rounded-3 bg-black dark:bg-white />
+        <div m-20px h-50px w-50px flex justify-between rounded-5 p-10px border="1 solid">
+          <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+          <span h-6px w-6px self-end rounded-3px bg-black dark:bg-white />
         </div>
-        <div m-20 h-50 w-50 flex justify-between rounded-5 p-10 border="1 solid">
-          <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-          <span h-6 w-6 self-center rounded-3 bg-black dark:bg-white />
-          <span h-6 w-6 self-end rounded-3 bg-black dark:bg-white />
+        <div m-20px h-50px w-50px flex justify-between rounded-5 p-10px border="1 solid">
+          <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+          <span h-6px w-6px self-center rounded-3px bg-black dark:bg-white />
+          <span h-6px w-6px self-end rounded-3px bg-black dark:bg-white />
         </div>
-        <div m-20 h-50 w-50 flex justify-between rounded-5 p-10 border="1 solid">
+        <div m-20px h-50px w-50px flex justify-between rounded-5 p-10px border="1 solid">
           <div flex-col justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
           <div flex-col justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
         </div>
-        <div m-20 h-50 w-50 flex-col items-center justify-between rounded-5 p-10 border="1 solid">
+        <div
+          m-20px
+          h-50px
+          w-50px
+          flex-col
+          items-center
+          justify-between
+          rounded-5
+          p-10px
+          border="1 solid"
+        >
           <div w-full flex justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
-          <div h-6 w-6 rounded-3 bg-black dark:bg-white />
+          <div h-6px w-6px rounded-3px bg-black dark:bg-white />
           <div w-full flex justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
         </div>
-        <div m-20 h-50 w-50 flex-col justify-between rounded-5 p-10 border="1 solid">
+        <div m-20px h-50px w-50px flex-col justify-between rounded-5 p-10px border="1 solid">
           <div w-full flex justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
           <div w-full flex justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
           <div w-full flex justify-between>
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
-            <span h-6 w-6 rounded-3 bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
+            <span h-6px w-6px rounded-3px bg-black dark:bg-white />
           </div>
         </div>
       </div>

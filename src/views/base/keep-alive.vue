@@ -7,10 +7,10 @@
  --------------------------------->
 
 <template>
-  <div w-350>
+  <div w-350px>
     <n-input v-model:value="inputVal" />
-    <n-input-number v-model:value="number" mt-30 />
-    <p mt-20 text-center text-14 color-gray dark:color-amber>
+    <n-input-number v-model:value="number" mt-30px />
+    <p mt-20px text-center text-14px color-gray dark:color-amber>
       注：右击标签重新加载可重置keep-alive
     </p>
   </div>

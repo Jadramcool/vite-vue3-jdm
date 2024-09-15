@@ -1,5 +1,4 @@
 import { useAuthStore, usePermissionStore, useUserStore } from '@/store';
-// TODO 删除getPermissions1
 import { getPermissions, getUserInfo } from '@/store/helper';
 
 const WHITE_LIST = ['/login', '/404'];
@@ -7,7 +6,7 @@ export function createPermissionGuard(router: any) {
   router.beforeEach(async (to: any) => {
     const authStore = useAuthStore();
     const { token } = authStore;
-    // TODO 无token的情况
+    // 无token的情况
     if (!token) {
       console.log('没有token，跳转到登录页');
       if (WHITE_LIST.includes(to.path)) return true;
@@ -15,7 +14,7 @@ export function createPermissionGuard(router: any) {
       return { path: 'login', query: { ...to.query, redirect: to.path } };
     }
 
-    // TODO 如果有token，并且是登录页，那么直接跳转到首页
+    // 如果有token，并且是登录页，那么直接跳转到首页
     if (to.path === '/login') return { path: '/' };
 
     if (WHITE_LIST.includes(to.path)) return true;

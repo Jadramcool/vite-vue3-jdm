@@ -1,53 +1,75 @@
 <template>
-  <div>login</div>
-  <n-button type="success" @click="handleLogin">登录</n-button>
-  <n-button type="warning" @click="handleLogout">退出登录</n-button>
+  <div
+    class="login wh-full flex justify-center items-center"
+    :class="appStore.colorMode === 'dark' ? 'login-body-dark' : 'login-body'"
+  >
+    <div class="card bg-primary_hover card-shadow p-20px flex-x-center justify-around">
+      <img
+        class="rounded-lg opacity-80 <md:hidden"
+        src="../../assets/images/login_banner.png"
+        alt=""
+      />
+      <Transition :name="appStore.transitionAnimation" mode="out-in">
+        <component :is="formComponets[formType]" v-model="formType" class="w-85%" />
+      </Transition>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import * as UserApi from '@/api/user';
-import { lStorage } from '@/utils/storage';
-import { useAuthStore } from '@/store';
+import { useAppStore } from '@/store';
+import { Login, Register } from './components';
 
-const router = useRouter();
-const route = useRoute();
+const appStore = useAppStore();
 
-const authStore = useAuthStore();
-
-onMounted(() => {
-  handleLogin();
-});
-
-const handleLogin = async () => {
-  try {
-    const data = {
-      username: 'admin',
-      password: '123456',
-    };
-    const res = await UserApi.login(data);
-    console.log('🚀 ~ handleLogin ~ res:', res);
-    onLoginSuccess(res);
-  } catch (error) {
-    console.error(error);
-  }
+type IformType = 'login' | 'register' | 'resetPwd';
+const formType: Ref<IformType> = ref('login');
+const formComponets: any = {
+  login: Login,
+  register: Register,
 };
+</script>
 
-async function onLoginSuccess(data: any = {}) {
-  authStore.setToken(data);
-  try {
-    if (route.query.redirect) {
-      const path: string = route.query.redirect as string;
-      delete route.query.redirect;
-      router.push({ path, query: route.query });
-    } else {
-      router.push('/');
+<style lang="scss" scoped>
+.login {
+  background-size: 400%;
+  animation: bganimation 10s ease infinite;
+  .card {
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    img {
+      max-width: 45%;
+      max-height: 90%;
     }
-  } catch (error) {
-    console.error(error);
   }
 }
 
-const handleLogout = () => {
-  lStorage.clearAll();
-};
-</script>
+.login-body-dark {
+  background-image: linear-gradient(125deg, #73787e, #374c83, #6ca5c0, #44ac78);
+  .card {
+    background-color: rgba($color: $card-bg-dark, $alpha: 0.6);
+  }
+}
+.login-body {
+  background-image: linear-gradient(125deg, #4facfe, #a1c4fd, #c2e9fb, #c2ffd8);
+  .card {
+    background-color: rgba($color: $card-bg, $alpha: 0.6);
+  }
+}
+
+/* 动画，控制背景 background-position */
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>

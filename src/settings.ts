@@ -36,7 +36,7 @@ export const naiveThemeOverrides = {
 export const lightThemeOverrides = {
   common: {
     borderColor: '#eee',
-    tabSelectedBg: '#F2F2F2',
+    tabSelectedBg: '#f0f0f4',
   },
 };
 // 黑暗模式下的主题变量

@@ -114,33 +114,3 @@ export const usePermissionStore = defineStore('permission', {
     },
   },
 });
-// 获取菜单项的 action
-// getMenuItem(item: any, parent: any): any {
-//   const route = this.generateRoute(item, item.show ? parent : null); // 根据权限项生成路由对象
-//   if (item.enable && route.path && !route.path.startsWith('http'))
-//     this.accessRoutes.push(route); // 如果权限项启用且路由路径有效且不是外部链接，则将路由对象存储到 accessRoutes 数组中
-//   if (!item.show) return null; // 如果权限项不显示，则返回空
-//   const menuItem: any = {
-//     id: item.id, // 菜单项的唯一标识符
-//     label: route.meta.title, // 菜单项的标题
-//     key: route.name, // 菜单项的唯一标识符
-//     path: route.path, // 菜单项对应的路径
-//     originPath: route.meta.originPath, // 原始路径
-//     icon: route.meta.icon ? renderIcon(route.meta.icon) : undefined,
-//     // 想用 unocss/icon 的图标，但是因为是动态的，需要加载到safeList中，所以这里直接使用了 iconify 的图标
-//     // icon: () => h('i', { class: `${route.meta.icon} text-16` }),
-//     // icon: route.meta.icon, // 菜单项的图标
-//     order: item.order ?? 0, // 菜单项的排序值，默认为 0
-//     pid: route.pid, // 父菜单项的唯一标识符
-//   };
-//   // 如果权限项有子菜单，则递归处理子菜单
-//   const children = item.children?.filter((item: any) => item.type === 'MENU') || [];
-//   if (children.length) {
-//     menuItem.children = children
-//       .map((child: any) => this.getMenuItem(child, menuItem.id)) // 递归获取子菜单项
-//       .filter((item: any) => !!item) // 过滤掉空对象
-//       .sort((a: any, b: any) => a.order - b.order); // 根据 order 字段排序
-//     if (!menuItem.children.length) delete menuItem.children; // 如果子菜单为空，则删除 children 字段
-//   }
-//   return menuItem; // 返回菜单项对象
-// },

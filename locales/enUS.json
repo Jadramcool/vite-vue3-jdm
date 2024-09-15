@@ -1,0 +1,80 @@
+{
+  "app": {
+    "BreadcrumbIcon": "Breadcrumb Icon",
+    "blackAndWhite": "Black and White Mode",
+    "bottomCopyright": "Bottom Copyright",
+    "breadcrumb": "Breadcrumb",
+    "dark": "Dark Theme",
+    "displaySetting": "Display Settings",
+    "light": "Light Theme",
+    "logoDisplay": "Logo Display",
+    "multitab": "Multitab Display",
+    "pageTransition": "Page Transition",
+    "setting": "Setting",
+    "system": "Follow System",
+    "themeColor": "Theme Color",
+    "themeSetting": "Theme Setting",
+    "toggleFullScreen": "Toggle Full Screen",
+    "topProgress": "Top Progress",
+    "transitionFadeBottom": "Fade Bottom",
+    "transitionFadeScale": "Fade Scale",
+    "transitionFadeSlide": "Fade Slide",
+    "transitionNull": "No Transition",
+    "transitionSoft": "Soft Transition",
+    "transitionZoomFade": "Zoom Fade",
+    "transitionZoomOut": "Zoom Out",
+    "watermake": "Watermark",
+    "weakColor": "Weak Color Mode"
+  },
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "input": "Input",
+    "open": "Open",
+    "pleaseInput": "Please Input",
+    "reload": "Reload",
+    "reset": "Reset",
+    "save": "Save",
+    "submit": "Submit"
+  },
+  "login": {
+    "experience": "Experience Account",
+    "forgetPassword": "Forgot Password",
+    "isRemember": "Remember Me",
+    "isRememberTips": "Please remember the login information in a safe computer environment!",
+    "length": "Characters",
+    "login": "Login",
+    "loginTips": "You have an account number?",
+    "password": "Password",
+    "passwordMaxLength": "Password Length Cannot Be More Than",
+    "passwordMinLength": "Password Length Cannot Be Less Than",
+    "passwordNotMatch": "Please enter the correct duplicate password",
+    "register": "Register",
+    "registerTips": "Don't have an account yet?",
+    "repeatPassword": "Repeat Password",
+    "status": {
+      "loginFailed": "Login Failed",
+      "logining": "Logging In",
+      "registerFailed": "Register Failed",
+      "registerSuccess": "Register Success",
+      "registering": "Registering"
+    },
+    "thirdPartyLogin": "Third Party Login",
+    "title": "jdm's Login Page",
+    "username": "Username"
+  },
+  "route": {
+    "Home": "Home"
+  },
+  "table": {
+    "refresh": "Reload",
+    "size": "Size",
+    "sizeType": {
+      "large": "large",
+      "medium": "medium",
+      "small": "small"
+    }
+  }
+}

@@ -1,3 +1,12 @@
+<!--
+ * @Author: Jay
+ * @Date: 2024-04-13 15:45:42
+ * @LastEditors: Jay
+ * @LastEditTime: 2024-08-01 14:22:06
+ * @FilePath: \vite-vue3-jdm\src\layout\components\tab\Reload.vue
+ * @Description: 
+ * 
+-->
 <template>
   <n-tooltip placement="bottom" trigger="hover">
     <template #trigger>
@@ -7,6 +16,7 @@
     </template>
     <span>{{ $t('common.reload') }}</span>
   </n-tooltip>
+  {{ $t('common.reload') }}
 </template>
 
 <script setup lang="ts">

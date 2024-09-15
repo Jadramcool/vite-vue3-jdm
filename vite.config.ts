@@ -1,3 +1,12 @@
+/*
+ * @Author: Jay
+ * @Date: 2024-05-06 10:22:58
+ * @LastEditors: Jay
+ * @LastEditTime: 2024-08-01 17:26:12
+ * @FilePath: \vite-vue3-jdm\vite.config.ts
+ * @Description:
+ *
+ */
 import { defineConfig, loadEnv, ConfigEnv } from 'vite';
 import path from 'path';
 
@@ -22,8 +31,8 @@ export default defineConfig((env: ConfigEnv) => {
     },
     server: {
       host: '0.0.0.0',
-      port: 8080,
-      open: true,
+      port: 4000,
+      open: false,
       https: false,
       // proxy: {
       //   '/api': {

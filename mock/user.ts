@@ -3,7 +3,7 @@
 export default () => {
   return [
     {
-      url: '/api/createUser',
+      url: '/mock/createUser',
       method: 'post',
       response: ({ body, query }: any) => {
         console.log('body>>>>>>>>', body);
@@ -18,7 +18,7 @@ export default () => {
     },
     // 用户登录
     {
-      url: '/api/user/login',
+      url: '/mock/user/login',
       method: 'post',
       response: () => {
         return {
@@ -31,7 +31,7 @@ export default () => {
       },
     }, // 获取用户信息
     {
-      url: '/api/user/info',
+      url: '/mock/user/info',
       method: 'get',
       response: () => {
         return {
@@ -48,7 +48,7 @@ export default () => {
       },
     }, // 一个失败的请求
     {
-      url: '/api/error',
+      url: '/mock/error',
       method: 'get',
       response: () => {
         return {
@@ -60,7 +60,7 @@ export default () => {
     },
     // 获取权限菜单
     {
-      url: '/api/premission/menu',
+      url: '/mock/permission/menu',
       method: 'get',
       response: () => {
         return {
@@ -336,91 +336,41 @@ export default () => {
               enable: true,
               order: 3,
             },
-          ],
-        };
-      },
-    },
-    {
-      url: '/api/premission/menu1',
-      method: 'get',
-      response: () => {
-        return {
-          code: 200,
-          message: '获取权限成功',
-          data: [
             {
-              id: 9,
-              name: '基础功能',
-              code: 'Base',
+              id: 100,
+              name: '系统管理',
+              code: 'System',
               type: 'MENU',
               pid: null,
-              path: '/base',
-              redirect: '/base/components',
+              path: '/system',
+              redirect: '/system/perssiom',
               icon: 'fe:layout',
               component: null,
-              layout: '',
+              layout: 'normal',
               keepAlive: null,
               method: null,
               description: null,
               show: true,
               enable: true,
               order: 0,
-              children: [
-                {
-                  id: 10,
-                  name: '基础组件',
-                  code: 'BaseComponents',
-                  type: 'MENU',
-                  pid: 9,
-                  path: '/base/components',
-                  redirect: null,
-                  icon: 'mdi:ab-testing',
-                  component: '/src/views/base/index.vue',
-                  layout: null,
-                  keepAlive: null,
-                  method: null,
-                  description: null,
-                  show: true,
-                  enable: true,
-                  order: 1,
-                },
-                {
-                  id: 11,
-                  name: 'Unocss',
-                  code: 'Unocss',
-                  type: 'MENU',
-                  pid: 9,
-                  path: '/base/unocss',
-                  redirect: null,
-                  icon: 'mdi:abugida-thai',
-                  component: '/src/views/base/unocss.vue',
-                  layout: null,
-                  keepAlive: null,
-                  method: null,
-                  description: null,
-                  show: true,
-                  enable: true,
-                  order: 2,
-                },
-                {
-                  id: 12,
-                  name: 'KeepAlive',
-                  code: 'KeepAlive',
-                  type: 'MENU',
-                  pid: 9,
-                  path: '/base/keep-alive',
-                  redirect: null,
-                  icon: 'mdi:account-circle-outline',
-                  component: '/src/views/base/keep-alive.vue',
-                  layout: null,
-                  keepAlive: true,
-                  method: null,
-                  description: null,
-                  show: true,
-                  enable: true,
-                  order: 3,
-                },
-              ],
+            },
+            {
+              id: 101,
+              name: '用户管理',
+              code: 'User',
+              type: 'MENU',
+              pid: null,
+              path: '/system/user',
+              redirect: null,
+              icon: 'fe:layout',
+              component: '/src/views/system/user/index.vue',
+              layout: 'normal',
+              keepAlive: true,
+              method: null,
+              description: null,
+              show: true,
+              enable: true,
+              order: 0,
             },
           ],
         };

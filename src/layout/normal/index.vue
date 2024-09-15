@@ -33,7 +33,7 @@
       </n-layout-header>
       <n-layout-content embedded class="h-full flex-1 overflow-hidden" :native-scrollbar="true">
         <div class="wh-full flex-col">
-          <AppCard class="cus-scroll m-12 h-0 flex-1 rounded-8 p-24" bordered>
+          <AppCard class="cus-scroll m-12px h-0 flex-1 rounded-8px p-24px" bordered>
             <Transition :name="appStore.transitionAnimation" mode="out-in">
               <slot />
             </Transition>

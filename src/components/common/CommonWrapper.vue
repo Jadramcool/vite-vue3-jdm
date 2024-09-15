@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <n-el tag="div" class="el p-6px cursor-pointer rounded">
+  <n-el class="el p-6px cursor-pointer rounded">
     <n-flex align="center" :wrap="false" class="h-full">
       <slot />
     </n-flex>

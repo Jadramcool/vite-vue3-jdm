@@ -3,5 +3,5 @@ export interface exampleModel {
   title: string;
   desc: string;
   url: string;
-  mobilUrl: string;
+  mobileUrl: string;
 }

@@ -12,7 +12,7 @@
       class="flex-center gap-2 cursor-pointer split"
       @click="router.push(item.path)"
     >
-      <jay-icon :icon="item.meta.icon" v-if="appStore.showBreadcrumbIcon" />
+      <jay-icon :icon="item.meta.icon as string" v-if="appStore.showBreadcrumbIcon" />
       <!-- <span class="whitespace-nowrap">{{ t(`route.${String(item.name)}`, item.meta.title) }}</span> -->
       <span class="whitespace-nowrap">{{ item.meta.title }}</span>
     </n-el>

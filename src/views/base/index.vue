@@ -20,19 +20,19 @@
     <n-card title="带 Icon 的按钮">
       <n-space>
         <n-button type="info">
-          <i class="i-material-symbols:add mr-4 text-18" />
+          <i class="i-material-symbols:add mr-4px text-18px" />
           新增
         </n-button>
         <n-button type="error">
-          <i class="i-material-symbols:delete-outline mr-4 text-18" />
+          <i class="i-material-symbols:delete-outline mr-4pxpx text-18px" />
           删除
         </n-button>
         <n-button type="warning">
-          <i class="i-material-symbols:edit-outline mr-4 text-18" />
+          <i class="i-material-symbols:edit-outline mr-4px text-18px" />
           编辑
         </n-button>
         <n-button type="primary">
-          <i class="i-majesticons:eye-line mr-4 text-18" />
+          <i class="i-majesticons:eye-line mr-4px text-18px" />
           查看
         </n-button>
       </n-space>

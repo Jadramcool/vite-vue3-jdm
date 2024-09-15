@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { setToken as setTokenLocal } from '@/utils';
 // import { useUserStore, usePermissionStore, useTabStore } from '@/store';
 
 export const useAuthStore = defineStore('auth', {
@@ -8,6 +9,7 @@ export const useAuthStore = defineStore('auth', {
   actions: {
     setToken({ token }: any) {
       this.token = token;
+      setTokenLocal(token);
     },
     resetToken() {
       this.$reset();

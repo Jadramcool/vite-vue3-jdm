@@ -31,7 +31,7 @@ export const useAppStore = defineStore('app', {
     theme: naiveThemeOverrides as GlobalThemeOverrides,
     layout: defaultLayout, // 布局配置
     // naiveThemeOverrides, // naive-ui 主题配置
-    lang: 'zhCN', // 语言
+    lang: lStorage.getItem('lang') || 'zhCN', // 语言
     primaryColor: naiveThemeOverrides.common.primaryColor, // 主题色
     weakColor: false, // 弱色
     grayMode: false, // 黑白模式
@@ -44,6 +44,9 @@ export const useAppStore = defineStore('app', {
     showBreadcrumb: true, // 是否显示面包屑
     showBreadcrumbIcon: true, // 是否显示面包屑图标
     showWatermark: false, // 是否显示水印
+    loginSet: {
+      formShowLabel: false,
+    },
   }),
   getters: {
     fullScreen() {
@@ -81,9 +84,6 @@ export const useAppStore = defineStore('app', {
       const common: any = this.theme?.common || {};
       Object.keys(common).forEach((key) => {
         const value: string = common[key];
-        if (key === 'borderColor') {
-          console.log('borderColor', value);
-        }
         useCssVar(`--${_.kebabCase(key)}`, document.documentElement).value = value || '';
 
         // 特别处理 primaryColor，将其存入本地存储
@@ -94,10 +94,9 @@ export const useAppStore = defineStore('app', {
     },
     // 设置主题色
     setPrimaryColor(color: string = '') {
-      console.log('设置主题色', color);
-      if (this.storeColorMode === 'dark') {
+      if (this.colorMode === 'dark') {
         this.theme = _.merge(this.theme, darkThemeOverrides);
-      } else {
+      } else if (this.colorMode === 'light') {
         this.theme = _.merge(this.theme, lightThemeOverrides);
       }
       if (color) {

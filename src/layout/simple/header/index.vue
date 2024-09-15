@@ -2,7 +2,7 @@
   <AppCard class="flex items-center px-12" border-b="1px solid light_border dark:dark_border">
     <span class="mx-6 opacity-20">|</span>
 
-    <div class="flex flex-shrink-0 items-center px-12 text-18">
+    <div class="flex flex-shrink-0 items-center px-12px text-18">
       <i
         class="mr-16 cursor-pointer"
         :class="isDark ? 'i-fe:moon' : 'i-fe:sun'"
